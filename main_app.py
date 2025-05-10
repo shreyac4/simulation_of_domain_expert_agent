@@ -1308,7 +1308,7 @@ def get_streamlit_secrets():
 def process_all_raw_documents(s3_client, dynamodb_resource, creds):
     with st.spinner("Processing all documents in bucket..."):
         domain_buckets = {
-            "Data Science": ("knowledge-raw-team1", "knowledge-processed-team1"),
+            "Data Science": ("final-team1-raw", "final-team1-processed"),
             "Software Engineering": ("se-knowledge-raw-team1", "se-knowledge-processed-team1"),
             "Electrical Engineering": ("ee-knowledge-raw-team1", "ee-knowledge-processed-team1")
         }
